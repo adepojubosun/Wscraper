@@ -1,0 +1,176 @@
+	{% extends "dashboard.html" %} {% block title %} {% endblock %}
+ {% block content %}
+	
+	<section id="content">
+					<section class="vbox">
+						<header class="header bg-light lt b-b b-light">
+							<p class="h4 font-thin pull-left m-r m-b-sm">Medias</p> <a class="btn btn-sm btn-info btn-rounded btn-icon"><i class="i i-cloud-upload"></i></a>
+							<form method="post"
+							class="m-t-sm pull-right pull-none-xs input-s-lg m-b-sm">
+								<div class="input-group">
+									<input type="text" id="address" name="address" class="input-sm form-control" placeholder="Search"> <span class="input-group-btn"> <button class="btn btn-sm btn-default" type="submit">Go!</button> </span> </div>
+							</form>
+						</header>
+						<section class="scrollable wrapper">
+							<div class="row">
+								<div class="col-md-3 col-md-push-9">
+									<div class="panel">
+										<div class="panel-heading b-b">Filter</div>
+										<div class="panel-body">
+											<ul class="list-unstyled m-t-n-sm">
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox" checked><i></i> Nature </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox" checked><i></i> Food and Drink </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox"><i></i> Model Released </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox"><i></i> Animals/Wildlife </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox"><i></i> Abstract </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox"><i></i> Beauty/Fashion </label>
+												</li>
+												<li class="checkbox i-checks">
+													<label>
+														<input type="checkbox"><i></i> Business </label>
+												</li>
+											</ul>
+											<div class="line line-dashed b-b line-lg"></div>
+											<ul class="list-unstyled">
+												<li class="radio i-checks">
+													<label>
+														<input type="radio" name="filter" checked><i></i> Today </label>
+												</li>
+												<li class="radio i-checks">
+													<label>
+														<input type="radio" name="filter"><i></i> Last Week </label>
+												</li>
+												<li class="radio i-checks">
+													<label>
+														<input type="radio" name="filter"><i></i> Last Month </label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-9 col-md-pull-3">
+									<div class="row row-sm">
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p1.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Skyline collection</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p2.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Morbi nec nunc condimentum</p>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p3.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Vestibulum ullamcorper sodales nisi</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p4.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Lorem ipsum dolor sit amet</p>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p0.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Donec eleifend condimentum nisl eu consectetur.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p6.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Duis non malesuada est</p>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p0.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Mauris convallis mauris at pellentesque</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p7.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Donec eleifend</p>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p8.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Vestibulum ullamcorper sodales</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p0.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Dapibus porta</p>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="thumbnail">
+												<a href="#"><img src="/images/p9.jpg" alt=""></a>
+												<div class="caption">
+													<p class="text-ellipsis m-b-none">Phasellus at ultricies neque,</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="btn-group m-r">
+											<button type="button" class="btn btn-default"><i class="i i-arrow-left4"></i></button>
+											<button type="button" class="btn btn-default"><i class="i i-arrow-right4"></i></button>
+										</div> Showing <strong>8</strong> of 25 </div>
+								</div>
+							</div>
+						</section>
+					</section>
+					<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+				</section>
+				
+				{% endblock %}

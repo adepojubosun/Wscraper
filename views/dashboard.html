@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="app bg-light">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Wscraper</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="/stylesheets/app.v1.css" type="text/css" />
+	<link rel="stylesheet" href="/javascripts/datepicker/datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="/javascripts/slider/slider.css" type="text/css" />
+	<link rel="stylesheet" href="/javascripts/chosen/chosen.css" type="text/css" />
+	<link rel="stylesheet" href="/javascripts/spinner/jquery.bootstrap-touchspin.css" type="text/css" />
+	<link rel="stylesheet" href="/javascripts/typehead/typehead.css" type="text/css" />
+	<!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+</head>
+
+<body class="">
+	
+	<section class="hbox stretch">
+		<!-- .aside -->
+		<aside class="bg-black aside" id="nav">
+			<section class="vbox">
+				<header class="header header-md navbar navbar-fixed-top-xs bg">
+					<div class="navbar-header ">
+						<a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html"> <i class="fa fa-bars"></i> </a>
+						<a href="index.html" class="navbar-brand"> <img src="/images/logo.png" class="m-r-sm" alt="scale"> <span class="hidden-nav-xs">Wscraper</span> </a>
+						<a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user"> <i class="fa fa-cog"></i> </a>
+					</div>
+				</header>
+				<section class="w-f scrollable">
+					<!-- nav -->
+					<div class=slim-scroll data-height=auto data-disable-fade-out=true data-distance=0 data-size=10px data-railOpacity=0.2>
+						<!-- nav -->
+						<nav class="nav-primary hidden-xs">
+							<ul class="nav nav-main" data-ride="collapse">
+								<li>
+									<a href="/" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Dashboard</span> </a>
+								</li>
+
+								<li>
+									<a href="/websites/edit" class="auto"> <span class="pull-right text-muted"> <i class="i i-circle-sm-o text"></i> <i class="i i-circle-sm text-active"></i></span>										<i class="i i-docs icon"> </i> <span class="font-bold"> Websites</span> </a>
+									<ul class="nav dk">
+										<li>
+											<a href="/websites/edit" class="auto"> <i class="i i-dot"></i> <span>Edit/Scrape</span> </a>
+										</li>
+										<li>
+											<a href="/websites/edit/new" class="auto"> <i class="i i-dot"></i> <span>New</span> </a>
+										</li>
+										<li>
+											<a href="#" class="auto"> <i class="i i-dot"></i> <span>Open Url</span> </a>
+										</li>
+								
+									</ul>
+								</li>
+								<li>
+									<a href="/content" class="auto"> <span class="pull-right text-muted"> <i class="i i-circle-sm-o text"></i> <i class="i i-circle-sm text-active"></i> </span>										<i class="i i-grid2 icon"> </i> <span class="font-bold">Content</span> </a>
+									<ul class="nav dk">
+										<li>
+											<a href="#" class="auto"> <b class="badge bg-success lt pull-right">2</b> <i class="i i-dot"></i> <span>Pictures</span> </a>
+										</li>
+										<li>
+											<a href="#" class="auto"> <i class="i i-dot"></i> <span>Articles</span> </a>
+										</li>
+										<li>
+											<a href="#" class="auto"> <i class="i i-dot"></i> <span>RSS Feeds</span> </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="line dk hidden-nav-xs"></div>
+						</nav>
+						<!-- / nav -->
+					</div>
+					<!-- / nav -->
+				</section>
+				<footer class="footer hidden-xs no-padder text-center-nav-xs">
+					<a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+						<i class="i i-logout"></i> </a>
+					<a href="#nav" data-toggle="class:nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+						<i class="i i-circleleft text"></i> <i class="i i-circleright text-active"></i> </a>
+				</footer>
+			</section>
+			
+
+
+		</aside>
+		<!-- /.aside -->
+        <section>
+		<section class="vbox">
+			{% block content %} {% endblock %}
+
+		</section>
+		</section>
+			<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+	</section>
+	<!-- Bootstrap -->
+	<!-- App -->
+	<script src="/javascripts/app.v1.js"></script>
+	<script src="/javascripts/app.plugin.js"></script>
+    <script src="/javascripts/charts/sparkline/jquery.sparkline.min.js"></script>
+	<!-- datepicker -->
+	<script src="/javascripts/datepicker/bootstrap-datepicker.js"></script>
+	<!-- slider -->
+	<script src="/javascripts/slider/bootstrap-slider.js"></script>
+	<!-- file input -->
+	<script src="/javascripts/file-input/bootstrap-filestyle.min.js"></script>
+	<!-- wysiwyg -->
+	<script src="/javascripts/wysiwyg/jquery.hotkeys.js"></script>
+	<script src="/javascripts/wysiwyg/bootstrap-wysiwyg.js"></script>
+	<script src="/javascripts/wysiwyg/demo.js"></script>
+	<!-- markdown -->
+	<script src="/javascripts/markdown/epiceditor.min.js"></script>
+	<script src="/javascripts/markdown/demo.js"></script>
+	<script src="/javascripts/chosen/chosen.jquery.min.js"></script>
+	<script src="/javascripts/spinner/jquery.bootstrap-touchspin.min.js"></script>
+	<script src="/javascripts/typehead/typeahead.bundle.min.js"></script>
+	<script src="/javascripts/typehead/demo.js"></script>
+	<script src="/javascripts/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.min.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.spline.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.pie.min.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.resize.js"></script>
+	<script src="/javascripts/charts/flot/jquery.flot.grow.js"></script>
+	<script src="/javascripts/charts/flot/demo.js"></script>
+	<script src="/javascripts/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+</body>
+
+</html>
